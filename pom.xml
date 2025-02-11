@@ -27,6 +27,12 @@
                             <groupId>io.avaje</groupId>
                             <artifactId>avaje-inject-generator</artifactId>
                             <version>${avaje.inject.version}</version>
+                            <exclusions>
+                                <exclusion>
+                                    <groupId>io.avaje</groupId>
+                                    <artifactId>avaje-inject-events</artifactId>
+                                </exclusion>
+                            </exclusions>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
@@ -112,6 +118,12 @@
             <groupId>io.avaje</groupId>
             <artifactId>avaje-inject</artifactId>
             <version>${avaje.inject.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>io.avaje</groupId>
+                    <artifactId>avaje-inject-events</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 </project>
